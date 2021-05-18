@@ -23,7 +23,8 @@ namespace languageSchool
         public MainWindow()
         {
             InitializeComponent();
-            ClassBase.EM = new RizhakovEntities;
+            ClassBase.EM = new RizhakovEntities();
+            ClassFrame.frame = frame;
             ClassFrame.frame.Navigate(new Admin());
         }
     }
